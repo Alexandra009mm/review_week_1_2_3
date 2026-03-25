@@ -1,7 +1,7 @@
-# This variable stores the total cost of the purchase.
+
+total_cost = 0 # This variable stores the total cost of the purchase.
 # At the beginning, the value is 0.
 
-total_cost = 0
 
 # The try block is used to detect possible errors
 # when the user enters incorrect data.
@@ -32,9 +32,9 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # The program prints the product information.
 
-print(f"Product name: {product_name} \n Priece: ${priece} \n count: {count} \n Total cost: {total_cost}")
+print(f"|Product name: {product_name}| \n |Priece: ${priece}| \n |count: {count}| \n |Total cost: {total_cost}|")
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
 
-'''This program records store sales.
+'''This program records store sales
 The user enters the product name, price, and quantity.
  The program calculates the total cost and shows a summary.'''
