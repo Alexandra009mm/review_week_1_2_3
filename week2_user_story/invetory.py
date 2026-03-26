@@ -6,10 +6,36 @@ general_total = 0
 total_products = 0
 
 def add_product():
+    m = True
+    while m:
+        product_name = input("enter the product name: ").lower()
+        if product_name == "":
+            print("error.try again")
+        else:
+            break 
+    while m:   
+        try:
+            p_price = float(input("enter the price: "))
+            if p_price < 0 or p_price:
+                print("enter other price. try again")
 
-    product_name = input("enter the product name: ").lower()
-    p_price = float(input("enter the price: "))
-    p_quantity = int(input("enter the quantity: "))
+            else:
+                break
+        except ValueError:
+                print("enter the price is invalide. try again")
+    while m:
+        try:
+            p_quantity = int(input("enter the quantity: "))
+            if p_quantity < 0:
+                print("enter another quantity.try again")
+
+            else: 
+                break
+
+        except ValueError:
+             print("error, enter a quantity. try again")
+
+        
     
     produ = {
         "product name": product_name,
@@ -56,7 +82,7 @@ while roll:
         a = input("register a new product? yes/no: ").lower()
         while a == "yes":
          add_product()
-        a = input("do you want add a new product? yes/no: ").lower()
+         a = input("do you want add a new product? yes/no: ").lower()
 
        
 
